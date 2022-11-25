@@ -7,8 +7,8 @@ import { Container } from "reactstrap";
 import { Col } from "reactstrap";
 
 function App() {
-  let titleProduct = "Product List";
-  let titleCategory = "Category List";
+  let productInfo = { title: "Product List" };
+  let categoryInfo = { title: "Category List" };
   return (
     <div>
       <Container>
@@ -17,10 +17,10 @@ function App() {
         </Row>
         <Row>
           <Col xs="3">
-            <CategoryList title={titleCategory} />
+            <CategoryList info={categoryInfo} />
           </Col>
           <Col xs="9">
-            <ProductList title={titleProduct} />
+            <ProductList info={productInfo} />
           </Col>
         </Row>
       </Container>
