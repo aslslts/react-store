@@ -100,7 +100,7 @@ function Navi(props) {
               </NavLink>
             </NavItem>
             <CartSummary
-              removeFromCart={this.props.removeFromCart}
+              removeFromCart={props.removeFromCart}
               cart={props.cart}
             />
           </Nav>
