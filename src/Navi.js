@@ -99,7 +99,10 @@ function Navi(props) {
                 GitHub
               </NavLink>
             </NavItem>
-            <CartSummary cart={props.cart} />
+            <CartSummary
+              removeFromCart={this.props.removeFromCart}
+              cart={props.cart}
+            />
           </Nav>
         </Collapse>
       </Navbar>
