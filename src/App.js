@@ -22,7 +22,7 @@ export default class App extends Component {
   };
 
   getProducts = (categoryId) => {
-    let url = "http://localhost:3001/products";
+    let url = "https://react-store-api-sigma.vercel.app/products";
     if (categoryId) {
       url += "/?categoryId=" + categoryId;
     }

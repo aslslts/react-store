@@ -11,7 +11,7 @@ export default class CategoryList extends Component {
   }
 
   getCategories = () => {
-    fetch("http://localhost:3001/categories")
+    fetch("https://react-store-api-sigma.vercel.app/categories")
       .then((response) => response.json())
       .then((data) => this.setState({ categories: data }));
   };
