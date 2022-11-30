@@ -5,6 +5,7 @@ import Navi from "./Navi";
 import ProductList from "./ProductList";
 import { Container } from "reactstrap";
 import { Col } from "reactstrap";
+import alertify from "alertifyjs";
 
 export default class App extends Component {
   state = { currentCategory: "", products: [], cart: [] };
@@ -37,6 +38,7 @@ export default class App extends Component {
     }
 
     this.setState({ cart: newCart });
+    alertify.success(product.productName + " added to cart!");
   };
   removeFromCart = (product) => {
     let newCart = this.state.cart.filter((c) => c.product.id !== product.id);
