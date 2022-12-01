@@ -9,6 +9,7 @@ import {
   NavLink,
 } from "reactstrap";
 import CartSummary from "./CartSummary";
+import { Link } from "react-router-dom";
 
 function Navi(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Navi(props) {
         <Collapse isOpen={isOpen} navbar style={{ flexGrow: 0 }}>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <Link to="/form1">Form Demo 1</Link>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/aslslts">GitHub</NavLink>
