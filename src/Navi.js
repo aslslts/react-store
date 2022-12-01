@@ -26,7 +26,9 @@ function Navi(props) {
         <Collapse isOpen={isOpen} navbar style={{ flexGrow: 0 }}>
           <Nav navbar>
             <NavItem>
-              <Link to="/form1">Form Demo 1</Link>
+              <NavLink>
+                <Link to="/form1">Form Demo 1</Link>
+              </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/aslslts">GitHub</NavLink>
