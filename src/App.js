@@ -91,7 +91,7 @@ export default class App extends Component {
                     />
                   )}
                 />
-                <Route path="form1" component={FormDemo1}></Route>
+                <Route path="/form1" component={FormDemo1}></Route>
                 <Route component={NotFound}></Route>
               </Switch>
             </Col>
